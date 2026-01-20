@@ -1,20 +1,19 @@
-from fastapi import FastAPI
-import os
+"""
+Cloud-Native DevOps Platform - Application Entry Point
+Production-grade FastAPI application with structured architecture
+"""
+import uvicorn
+from app.app_factory import create_application
+from app.config import settings
 
-app = FastAPI()
-
-@app.get("/")
-def read_root():
-    return {
-        "message": "Hello from AWS ECS Fargate!",
-        "environment": os.environ.get("ENVIRONMENT", "local"),
-        "version": "1.0.0"
-    }
-
-@app.get("/health")
-def read_health():
-    return {"status": "healthy"}
+# Create application instance
+app = create_application()
 
 if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(
+        "main:app",
+        host=settings.host,
+        port=settings.port,
+        reload=settings.debug,
+        log_level=settings.log_level.lower()
+    )

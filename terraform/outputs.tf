@@ -1,8 +1,24 @@
 output "vpc_id" {
-  value = module.vpc.vpc_id
+  description = "VPC ID"
+  value       = module.vpc.vpc_id
 }
 
 output "alb_dns_name" {
-  # Value will be populated once ALB module is added
-  value = "Check back after Phase 2 - Step: Load Balancing"
+  description = "Application Load Balancer DNS name"
+  value       = module.alb.alb_dns_name
+}
+
+output "ecs_cluster_name" {
+  description = "ECS Cluster name"
+  value       = module.ecs.ecs_cluster_name
+}
+
+output "ecs_service_name" {
+  description = "ECS Service name"
+  value       = module.ecs.ecs_service_name
+}
+
+output "application_url" {
+  description = "Application URL (HTTP)"
+  value       = "http://${module.alb.alb_dns_name}"
 }

@@ -1,0 +1,38 @@
+"""
+Application Constants
+Centralized constants used throughout the application
+"""
+
+# Application
+APP_NAME = "DevOps Platform"
+APP_VERSION = "1.0.0"
+
+# Deployment
+MAX_DEPLOYMENT_RETRIES = 3
+DEPLOYMENT_TIMEOUT_SECONDS = 600
+DEFAULT_DEPLOYMENT_ENVIRONMENT = "prod"
+
+# Pagination
+DEFAULT_PAGE_SIZE = 20
+MAX_PAGE_SIZE = 100
+
+# Cache
+DEFAULT_CACHE_TTL_SECONDS = 300
+METRICS_CACHE_TTL_SECONDS = 60
+
+# Health Check
+HEALTH_CHECK_TIMEOUT_SECONDS = 5
+
+# Logging
+LOG_FORMAT_JSON = "json"
+LOG_FORMAT_TEXT = "text"
+
+# AWS
+AWS_DEFAULT_REGION = "us-east-1"
+ECS_TASK_DESIRED_COUNT = 2
+ECS_TASK_CPU = "256"
+ECS_TASK_MEMORY = "512"
+
+# Metrics
+METRICS_HISTORY_SIZE = 1000
+PROMETHEUS_PORT = 9090
