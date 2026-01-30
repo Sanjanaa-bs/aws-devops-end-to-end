@@ -16,7 +16,7 @@
 
 ---
 
-## 🎯 30-Second Pitch
+## 🎯 About
 
 **What does this project actually do?**
 
@@ -528,7 +528,7 @@ T+150s  │ Old Tasks: ∅ (terminated)
 </tr>
 </table>
 
-> 🎯 **Interview Tip:** Explain how you prevent AWS key leaks using OIDC → this is a common senior interview question
+> 🎯 **About:** Explain how you prevent AWS key leaks using OIDC → this is a common senior interview question
 
 ---
 
@@ -629,9 +629,9 @@ Min: 2 tasks (high availability)
 
 ---
 
-## 🎯 Resume-Ready Talking Points
+## 🎯 Important points
 
-### **For Your Resume:**
+### *IMPORTANT:**
 
 **DevOps Engineer | Cloud Infrastructure Specialist**
 
@@ -641,7 +641,7 @@ Min: 2 tasks (high availability)
 - ✅ Implemented **auto-scaling infrastructure** with Fargate that dynamically adjusts capacity based on CPU/memory metrics, reducing cloud costs by 40% while maintaining SLA
 - ✅ Established **comprehensive observability** using CloudWatch Logs, Metrics, and Alarms with centralized monitoring dashboards and proactive alerting for 24/7 reliability
 
-### **For Interviews:**
+### *MAIN:**
 
 **"Walk me through your DevOps project."**
 
